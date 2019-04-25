@@ -10,8 +10,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       type: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'drakonc',
-      password: 'Passw0rd!!',
+      username: 'root',
+      password: '',
       database: 'sendmeapp_db',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
@@ -20,4 +20,4 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   controllers: [AppController, MensajesController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
